@@ -1,10 +1,10 @@
 @props(['value'])
 @php
     $warna = match ($value) {
-        'aktif', 'tersedia', 'dibayar', 'dikembalikan', 'normal' => 'bg-green-100 text-green-800',
-        'menunggu', 'menunggu_pemeriksaan', 'belum_dibayar', 'peringatan', 'dipotong' => 'bg-yellow-100 text-yellow-800',
-        'disetujui', 'diambil_alih', 'perawatan' => 'bg-blue-100 text-blue-800',
-        'ditolak', 'dibatalkan', 'terabaikan', 'terpakai_habis' => 'bg-red-100 text-red-800',
+        'aktif', 'tersedia', 'dibayar', 'dikembalikan' => 'bg-green-100 text-green-800',
+        'menunggu', 'menunggu_pemeriksaan', 'belum_dibayar', 'dipotong' => 'bg-yellow-100 text-yellow-800',
+        'disetujui', 'perawatan' => 'bg-blue-100 text-blue-800',
+        'ditolak', 'dibatalkan', 'terpakai_habis' => 'bg-red-100 text-red-800',
         default => 'bg-gray-100 text-gray-800',
     };
 @endphp

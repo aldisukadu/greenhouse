@@ -13,6 +13,7 @@ class DashboardController extends Controller
     {
         return view('admin.dashboard', [
             'menunggu' => Peminjaman::where('status', Peminjaman::STATUS_MENUNGGU)->count(),
+            'pemeriksaan' => Peminjaman::where('status', Peminjaman::STATUS_MENUNGGU_PEMERIKSAAN)->count(),
             'aktif' => Peminjaman::where('status', Peminjaman::STATUS_AKTIF)->count(),
             'lahanTersedia' => Lahan::where('status', Lahan::STATUS_TERSEDIA)->count(),
             'lahanTotal' => Lahan::count(),

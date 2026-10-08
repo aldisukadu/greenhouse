@@ -59,7 +59,7 @@
                     </div>
 
                     <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
-                        Anda wajib merawat lahan selama masa pinjam. Jika lahan terabaikan, admin merawatnya dan biayanya dipotong dari deposit.
+                        Lahan harus dikembalikan dalam keadaan bersih saat masa pinjam berakhir, disertai foto kondisi lahan. Jika tidak bersih atau tidak dikembalikan sampai {{ config('greenhouse.batas_kembali_hari') }} hari setelah tanggal selesai, admin yang membersihkannya dan biayanya dipotong dari deposit. Sisa deposit dikembalikan.
                     </p>
 
                     <div class="flex items-center justify-end mt-6">
